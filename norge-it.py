@@ -1,4 +1,4 @@
-#Din pc
+#Din pc informasjon
 import platform
 my_system = platform.uname()
 
@@ -10,7 +10,7 @@ print(f"Maskin: {my_system.machine}")
 print(f"Hvilken type prosesor du har : {my_system.processor}")
 print("---------------------------------------------")
 
-#lagring plass på pc-en din 
+#lagring plass på pc-en din  
 import psutil
 total = int()
 used = int()
@@ -26,7 +26,7 @@ print(f"HVOR MYE DU HAR BRUKT : {round(used / (1024.0 ** 3), 4)} GIGA")
 print(f"HVOR MYE DU HAR IGJEN : {round(free / (1024.0 ** 3), 4)} GIGA")
 print("---------------------------------------------")
 
-#ip address
+#ip address på den pc
 import socket 
 h_navn = socket.gethostname()
 IP_addres = socket.gethostbyname(h_navn)
