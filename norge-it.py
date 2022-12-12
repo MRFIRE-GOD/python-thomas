@@ -1,3 +1,4 @@
+print("---------------------------------------------")
 #Din pc informasjon
 import platform
 my_system = platform.uname()
@@ -30,7 +31,7 @@ print("---------------------------------------------")
 import socket 
 h_navn = socket.gethostname()
 IP_addres = socket.gethostbyname(h_navn)
-print("Eier navn er: " + h_navn)
+print("navn er: " + h_navn)
 print("Din ip address er " + IP_addres)
 print("---------------------------------------------")
 
