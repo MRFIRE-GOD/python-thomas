@@ -47,20 +47,3 @@ try:
 except IndexError as e:
     print("Ferdig se opp")
 print("---------------------------------------------")
-
-#strøm på pc-en
-import psutil
-def convertTime(seconds):
-    days = int(seconds / 3600/24)
-    seconds = seconds - days*3600*24
-    hours = int(seconds / 3600)
-    seconds = seconds - hours*3600
-    minutes = int(seconds / 60)
-    minutes, seconds = divmod(seconds, 60)
-    hours, minutes = divmod(minutes, 60)
-    return "%d:%02d:%02d" % (hours, minutes, seconds)
-battery = psutil.sensors_battery()
-print("Din strøm liv : ", battery.percent)
-print("Lader pc-en :", battery.power_plugged)
-print("Hvor lenge liv pc-en har :", convertTime(battery.secsleft))
-print("---------------------------------------------")
