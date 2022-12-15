@@ -65,7 +65,7 @@ with open('output.txt', 'w') as f:
     lagring()
     ip_address()
     program()
-=======
+
 import platform
 import socket
 import subprocess
