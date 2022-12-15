@@ -18,3 +18,4 @@ print(hvaErprosesor)
 print("----------------------------------------------")
 
 #lagring plass på pc-en din
+print("lets try again")
