@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import platform
 import shutil
 import psutil
@@ -18,3 +19,6 @@ print(hvaErprosesor)
 print("----------------------------------------------")
 
 #lagring plass på pc-en din
+=======
+from platform import system, node, release, version, machine, processor 
+>>>>>>> Stashed changes
