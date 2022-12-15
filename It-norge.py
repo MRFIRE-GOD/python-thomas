@@ -33,9 +33,7 @@ def lagring():
             print(f"Du hadde : {round(total / (1024.0 ** 3), 4)} Giga")
             print(f"Hvor mye du har used : {round(used / (1024.0 ** 3), 4)} Giga")
             print(f"hvor mye du har igjen : {round(free / (1024.0 **3),4)} Giga")
-lagring()
 
-print("-----------------------------------------")
 
 
 #Ip address
@@ -44,8 +42,6 @@ def ip_address():
     ip = socket.gethostbyname(hostname)
     print("pc-navnet er :" + hostname)
     print("Ip address er : " + ip)
-ip_address()
-print("-----------------------------------------")
 
 #programmer du har
 def program():
@@ -60,6 +56,8 @@ def program():
     except IndexError as e:
         print("Ferdig se opp")
 
+lagring()
+ip_address()
 program()
 print("---------------------------------------------")
 #this com.. is just to get more in git hub om
