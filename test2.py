@@ -1,8 +1,16 @@
-import sys
-orgi_stdout = sys.stdout
-f = open ("save.txt", "w")
-sys.stdout = f
-for i in range(2):
-    print("i = ", i)
-sys.stdout = orgi_stdout
-f.close
+import platform
+import socket
+import subprocess
+import psutil
+def program():
+
+    Data = subprocess.check_output(['wmic', 'product', 'get', 'name'])
+    a = str(Data)
+
+    try:
+        for i in range(len(a)):
+            print("Du har: ", (a.split("\\r\\r\\n")[6:][i]))
+
+    except IndexError as e:
+        print("Ferdig se opp")
+program()

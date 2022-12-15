@@ -1,12 +1,17 @@
-import platform
-import socket
-import subprocess
-import os
-import psutil
+import sys
 
-hvaErOS = ""
+# Save the output to a file
+with open('output.txt', 'w') as f:
+    # Redirect standard output to the file
+    sys.stdout = f
 
-def pc_info():
+    # Code that generates output goes here
+    import platform
+    import socket
+    import subprocess
+    import shutil
+    import psutil
+
     hvaErOS=platform.architecture()
     hvaEr=platform.node()
     hvaErPc=platform.release()
@@ -20,56 +25,45 @@ def pc_info():
     print(hvaErPcVersjon)
     print(hvaErMaskin)
     print(hvaErprosesor)
-pc_info()
-print("----------------------------------------------")
+    print("----------------------------------------------")
 
-#lagring plass på pc-en din
-def lagring():
-    total = int()
-    used = int()
-    free = int()
-    for disk in psutil.disk_partitions():
-        if disk.fstype:
-            total += int(psutil.disk_usage(disk.mountpoint).total)
-            used += int(psutil.disk_usage(disk.mountpoint).used)
-            free += int(psutil.disk_usage(disk.mountpoint).free)
+    #lagring plass på pc-en din
+    def lagring():
+        total = int()
+        used = int()
+        free = int()
+        for disk in psutil.disk_partitions():
+            if disk.fstype:
+                total += int(psutil.disk_usage(disk.mountpoint).total)
+                used += int(psutil.disk_usage(disk.mountpoint).used)
+                free += int(psutil.disk_usage(disk.mountpoint).free)
 
-            print(f"Du hadde : {round(total / (1024.0 ** 3), 4)} Giga")
-            print(f"Hvor mye du har used : {round(used / (1024.0 ** 3), 4)} Giga")
-            print(f"hvor mye du har igjen : {round(free / (1024.0 **3),4)} Giga")
-
-
-
-#Ip address
-def ip_address():
-    hostname = socket.gethostname()
-    ip = socket.gethostbyname(hostname)
-    print("pc-navnet er :" + hostname)
-    print("Ip address er : " + ip)
-
-#programmer du har
-def program():
-
-    Data = subprocess.check_output(['wmic', 'product', 'get', 'name'])
-    a = str(Data)
-
-    try:
-        for i in range(len(a)):
-            print("Du har: ", (a.split("\\r\\r\\n")[6:][i]))
-
-    except IndexError as e:
-        print("Ferdig se opp")
-
-lagring()
-ip_address()
-program()
-print (hvaErOS)
+                print(f"Du hadde : {round(total / (1024.0 ** 3), 4)} Giga")
+                print(f"Hvor mye du har used : {round(used / (1024.0 ** 3), 4)} Giga")
+                print(f"hvor mye du har igjen : {round(free / (1024.0 **3),4)} Giga")
 
 
 
-f = open("save.txt", "w")
-f.write("Pc-en: " + hvaErOS + "\n")
-f.write("lagring : " + str(lagring) + "\n")
-f.write("ip_address : " + str(ip_address) + "\n")
-f.write("program : " + str(program) + "\n")
-f.close()
+    #Ip address
+    def ip_address():
+        hostname = socket.gethostname()
+        ip = socket.gethostbyname(hostname)
+        print("pc-navnet er :" + hostname)
+        print("Ip address er : " + ip)
+
+    #programmer du har
+    def program():
+
+        Data = subprocess.check_output(['wmic', 'product', 'get', 'name'])
+        a = str(Data)
+
+        try:
+            for i in range(len(a)):
+                print("Du har: ", (a.split("\\r\\r\\n")[6:][i]))
+
+        except IndexError as e:
+            print("Ferdig se opp")
+
+    lagring()
+    ip_address()
+    program()

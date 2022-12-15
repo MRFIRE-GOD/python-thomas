@@ -3,8 +3,9 @@ import socket
 import subprocess
 import os
 import psutil
-
-hvaErOS = ""
+import sys
+with open('save.txt', 'w') as f:
+    sys.stdout = f
 
 def pc_info():
     hvaErOS=platform.architecture()
@@ -24,7 +25,7 @@ pc_info()
 print("----------------------------------------------")
 
 #lagring plass på pc-en din
-+def lagring():
+def lagring():
     total = int()
     used = int()
     free = int()
@@ -63,13 +64,3 @@ def program():
 lagring()
 ip_address()
 program()
-print (hvaErOS)
-
-
-
-f = open("save.txt", "w")
-f.write("Pc-en: " + hvaErOS + "\n")
-f.write("lagring : " + str(lagring) + "\n")
-f.write("ip_address : " + str(ip_address) + "\n")
-f.write("program : " + str(program) + "\n")
-f.close()
