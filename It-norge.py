@@ -1,11 +1,7 @@
-<<<<<<< Updated upstream
+
 import platform
-<<<<<<< Updated upstream
-import shutil
-=======
 import socket
 import subprocess
->>>>>>> Stashed changes
 import psutil
 
 hvaErOS=platform.architecture()
@@ -24,11 +20,8 @@ print(hvaErprosesor)
 print("----------------------------------------------")
 
 #lagring plass på pc-en din
-<<<<<<< Updated upstream
-=======
 from platform import system, node, release, version, machine, processor 
->>>>>>> Stashed changes
-=======
+
 def lagring():
     total = int()
     used = int()
@@ -73,4 +66,4 @@ lagring()
 ip_address()
 program()
 #this com.. is just to get more in git hub omh
->>>>>>> Stashed changes
+
