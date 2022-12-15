@@ -61,6 +61,11 @@ def program():
     except IndexError as e:
         print("Ferdig se opp")
 
+
 lagring()
 ip_address()
 program()
+except IndexError as e:
+    print("Ferdig se opp")
+print("---------------------------------------------")
+
