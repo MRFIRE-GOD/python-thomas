@@ -6,8 +6,8 @@ AMD64
 Intel64 Family 6 Model 140 Stepping 1, GenuineIntel
 ----------------------------------------------
 Du hadde : 237.2275 Giga
-Hvor mye du har used : 174.2959 Giga
-hvor mye du har igjen : 62.9316 Giga
+Hvor mye du har used : 174.2833 Giga
+hvor mye du har igjen : 62.9442 Giga
 pc-navnet er :Thomasthe-tankeng1ne
 Ip address er : 192.168.1.100
 Du har:  HOTKEY                                                          

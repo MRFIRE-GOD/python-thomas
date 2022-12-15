@@ -1,11 +1,8 @@
 import sys
-
-# Save the output to a file
+#det her vil gjør outputen lagres i en fil
 with open('output.txt', 'w') as f:
-    # Redirect standard output to the file
     sys.stdout = f
 
-    # Code that generates output goes here
     import platform
     import socket
     import subprocess
