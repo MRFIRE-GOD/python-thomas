@@ -1,0 +1,4 @@
+Pc-en: 
+lagring : <function lagring at 0x000001BCE0C03D00>
+ip_address : <function ip_address at 0x000001BCE0C03EB0>
+program : <function program at 0x000001BCE0C03E20>

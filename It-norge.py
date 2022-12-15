@@ -1,22 +1,26 @@
 import platform
 import socket
 import subprocess
-import shutil
+import os
 import psutil
 
-hvaErOS=platform.architecture()
-hvaEr=platform.node()
-hvaErPc=platform.release()
-hvaErPcVersjon=platform.version()
-hvaErMaskin=platform.machine()
-hvaErprosesor=platform.processor()
+hvaErOS = ""
 
-print(hvaErOS)
-print(hvaEr)
-print(hvaErPc)
-print(hvaErPcVersjon)
-print(hvaErMaskin)
-print(hvaErprosesor)
+def pc_info():
+    hvaErOS=platform.architecture()
+    hvaEr=platform.node()
+    hvaErPc=platform.release()
+    hvaErPcVersjon=platform.version()
+    hvaErMaskin=platform.machine()
+    hvaErprosesor=platform.processor()
+
+    print(hvaErOS)
+    print(hvaEr)
+    print(hvaErPc)
+    print(hvaErPcVersjon)
+    print(hvaErMaskin)
+    print(hvaErprosesor)
+pc_info()
 print("----------------------------------------------")
 
 #lagring plass på pc-en din
@@ -59,3 +63,13 @@ def program():
 lagring()
 ip_address()
 program()
+print (hvaErOS)
+
+
+
+f = open("save.txt", "w")
+f.write("Pc-en: " + hvaErOS + "\n")
+f.write("lagring : " + str(lagring) + "\n")
+f.write("ip_address : " + str(ip_address) + "\n")
+f.write("program : " + str(program) + "\n")
+f.close()
