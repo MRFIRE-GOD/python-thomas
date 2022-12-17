@@ -1,4 +1,10 @@
 
+import socket
+hostname = socket.gethostname()
+print(hostname)
+ipaddress = socket.gethostbyname(hostname)
+print(ipaddress)
+
 import psutil
 
 hdd = psutil.disk_usage('/')

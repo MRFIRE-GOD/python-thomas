@@ -6,8 +6,8 @@ AMD64
 Intel64 Family 6 Model 140 Stepping 1, GenuineIntel
 -------------------------det er info om pc.en----------------------------------------------------------------------------------
 Du hadde : 237.2275 Giga
-Hvor mye du har used : 174.8186 Giga
-hvor mye du har igjen : 62.4089 Giga
+Hvor mye du har used : 174.8839 Giga
+hvor mye du har igjen : 62.3437 Giga
 ---------------------------diskens lagring plass--------------------------------------------------------------------------------
 pc-navnet er :Thomasthe-tankeng1ne
 Ip address er : 10.192.8.222
