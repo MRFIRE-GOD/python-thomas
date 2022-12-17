@@ -1,3 +1,4 @@
+
 import platform
 import socket
 import subprocess
@@ -14,3 +15,4 @@ def program():
     except IndexError as e:
         print("Ferdig se opp")
 program()
+

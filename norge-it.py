@@ -66,6 +66,16 @@ with open('save.txt', 'w') as f:
         print("---------------------------------det her viser din programmer som er lasta ned--------------------------------------------------------------------------")
 
 
+
     lagring()
     ip_address()
     program()
+
+
+lagring()
+ip_address()
+program()
+except IndexError as e:
+    print("Ferdig se opp")
+print("---------------------------------------------")
+
