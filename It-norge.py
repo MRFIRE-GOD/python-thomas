@@ -1,15 +1,16 @@
+import sys    
+import platform
+import socket
+import subprocess
+import psutil
+
 
 import sys
+
 #det her vil gjør outputen lagres i en fil
 with open('output.txt', 'w') as f:
     sys.stdout = f
-
-    import platform
-    import socket
-    import subprocess
-    import shutil
-    import psutil
-
+    
     hvaErOS=platform.architecture()
     hvaEr=platform.node()
     hvaErPc=platform.release()
@@ -23,7 +24,8 @@ with open('output.txt', 'w') as f:
     print(hvaErPcVersjon)
     print(hvaErMaskin)
     print(hvaErprosesor)
-    print("----------------------------------------------")
+    print("-------------------------det er info om pc.en----------------------------------------------------------------------------------")
+
 
     #lagring plass på pc-en din
     def lagring():
@@ -39,6 +41,8 @@ with open('output.txt', 'w') as f:
                 print(f"Du hadde : {round(total / (1024.0 ** 3), 4)} Giga")
                 print(f"Hvor mye du har used : {round(used / (1024.0 ** 3), 4)} Giga")
                 print(f"hvor mye du har igjen : {round(free / (1024.0 **3),4)} Giga")
+        print("---------------------------diskens lagring plass--------------------------------------------------------------------------------")
+
 
 
 
@@ -48,6 +52,7 @@ with open('output.txt', 'w') as f:
         ip = socket.gethostbyname(hostname)
         print("pc-navnet er :" + hostname)
         print("Ip address er : " + ip)
+        print("--------------------------------det er for ip addres---------------------------------------------------------------------------")
 
     #programmer du har
     def program():
@@ -61,6 +66,8 @@ with open('output.txt', 'w') as f:
 
         except IndexError as e:
             print("Ferdig se opp")
+        print("---------------------------------det her viser din programmer som er lasta ned--------------------------------------------------------------------------")
+
 
     lagring()
     ip_address()
