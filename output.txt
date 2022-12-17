@@ -4,12 +4,14 @@ Thomasthe-tankeng1ne
 10.0.22621
 AMD64
 Intel64 Family 6 Model 140 Stepping 1, GenuineIntel
-----------------------------------------------
+-------------------------det er info om pc.en----------------------------------------------------------------------------------
 Du hadde : 237.2275 Giga
-Hvor mye du har used : 174.2833 Giga
-hvor mye du har igjen : 62.9442 Giga
+Hvor mye du har used : 174.9735 Giga
+hvor mye du har igjen : 62.254 Giga
+---------------------------diskens lagring plass--------------------------------------------------------------------------------
 pc-navnet er :Thomasthe-tankeng1ne
-Ip address er : 192.168.1.100
+Ip address er : 10.16.81.227
+--------------------------------det er for ip addres---------------------------------------------------------------------------
 Du har:  HOTKEY                                                          
 Du har:  Python 3.11.0 Tcl/Tk Support (64-bit)                           
 Du har:  HOTKEY                                                          
@@ -39,3 +41,4 @@ Du har:  Microsoft Visual C++ 2022 X86 Additional Runtime - 14.34.31931
 Du har:  
 Du har:  '
 Ferdig se opp
+---------------------------------det her viser din programmer som er lasta ned--------------------------------------------------------------------------
