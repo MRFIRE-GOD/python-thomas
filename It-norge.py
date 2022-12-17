@@ -4,9 +4,9 @@ import socket
 import subprocess
 import psutil
 #det her vil gjør outputen lagres i en fil
-with open('output.txt', 'w') as f:
+with open('your-pc-name.txt', 'w') as f:
     sys.stdout = f
-    
+
     hvaErOS=platform.architecture()
     hvaEr=platform.node()
     hvaErPc=platform.release()
