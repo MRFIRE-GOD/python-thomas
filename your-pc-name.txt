@@ -1,0 +1,44 @@
+('64bit', 'WindowsPE')
+Thomasthe-tankeng1ne
+10
+10.0.22621
+AMD64
+Intel64 Family 6 Model 140 Stepping 1, GenuineIntel
+-------------------------det er info om pc.en----------------------------------------------------------------------------------
+Du hadde : 237.2275 Giga
+Hvor mye du har used : 183.516 Giga
+hvor mye du har igjen : 53.7115 Giga
+---------------------------diskens lagring plass--------------------------------------------------------------------------------
+pc-navnet er :Thomasthe-tankeng1ne
+Ip address er : 192.168.1.101
+--------------------------------det er for ip addres---------------------------------------------------------------------------
+Du har:  HOTKEY                                                          
+Du har:  Python 3.11.0 Tcl/Tk Support (64-bit)                           
+Du har:  HOTKEY                                                          
+Du har:  Python 3.11.0 Documentation (64-bit)                            
+Du har:  Python 3.11.0 Test Suite (64-bit)                               
+Du har:  Python 3.11.0 pip Bootstrap (64-bit)                            
+Du har:  Python 3.11.0 Executables (64-bit)                              
+Du har:  HOTKEY                                                          
+Du har:  Python 3.11.0 Development Libraries (64-bit)                    
+Du har:  Office 16 Click-to-Run Extensibility Component                  
+Du har:  Office 16 Click-to-Run Localization Component                   
+Du har:  Office 16 Click-to-Run Licensing Component                      
+Du har:  Viken Print                                                     
+Du har:  Microsoft Visual C++ 2022 X64 Additional Runtime - 14.34.31931  
+Du har:  Eclipse Temurin JDK with Hotspot 17.0.5+8 (x64)                 
+Du har:  Intel(R) Chipset Device Software                                
+Du har:  Node.js                                                         
+Du har:  Microsoft Visual C++ 2022 X86 Minimum Runtime - 14.34.31931     
+Du har:                                                                  
+Du har:  Python Launcher                                                 
+Du har:  Teams Machine-Wide Installer                                    
+Du har:  Cloudpaging Player                                              
+Du har:  AppsAnywhere                                                    
+Du har:  Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.34.31931     
+Du har:  Oracle VM VirtualBox 7.0.2                                      
+Du har:  Microsoft Visual C++ 2022 X86 Additional Runtime - 14.34.31931  
+Du har:  
+Du har:  '
+Ferdig se opp
+---------------------------------det her viser din programmer som er lasta ned--------------------------------------------------------------------------
